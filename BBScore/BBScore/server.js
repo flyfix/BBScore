@@ -1,6 +1,21 @@
-﻿var http = require('http');
+﻿//requires
+var http = require('http');
+var express = require('express');
+var bodyParser = require("body-parser");
+var controllers = require("./controllers");
+
+//initialization
+var app = express();
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
 var port = process.env.port || 1337;
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
+controllers.init(app);
+
+
+
+app.get("/api/users", function (req, res) {
+    res.set("Content-Type", "application/json");
+    res.send({ name: "Klaudiusz" });
+})
+var server = http.createServer(app);
+server.listen(port);
