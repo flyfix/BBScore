@@ -1,0 +1,2 @@
+G:\Repos\Szkola\BBScore\BBScore\BBScore\obj\Debug\BBScore.njsprojResolveAssemblyReference.cache
+G:\Repos\Szkola\BBScore\BBScore\BBScore\bin\Microsoft.NodejsTools.WebRole.dll

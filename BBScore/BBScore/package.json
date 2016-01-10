@@ -1,0 +1,10 @@
+{
+  "name": "BBScore",
+  "version": "0.0.0",
+  "description": "BBScore",
+  "main": "server.js",
+  "author": {
+    "name": "Klaudiusz",
+    "email": ""
+  }
+}
